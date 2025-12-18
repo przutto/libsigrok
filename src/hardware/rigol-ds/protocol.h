@@ -30,11 +30,11 @@
 
 /* Size of acquisition buffers */
 // #define ACQ_BUFFER_SIZE (32 * 1024)
-#define ACQ_BUFFER_SIZE (1000 * 1024)
+#define ACQ_BUFFER_SIZE (21 * 1024 * 1024)
 
 /* Maximum number of samples to retrieve at once. */
 // #define ACQ_BLOCK_SIZE (30 * 1000)
-#define ACQ_BLOCK_SIZE (1000 * 1024)
+#define ACQ_BLOCK_SIZE (10 * 1000 * 1000)
 
 #define MAX_ANALOG_CHANNELS 4
 #define MAX_DIGITAL_CHANNELS 16	/* Must be multiple of 8 */

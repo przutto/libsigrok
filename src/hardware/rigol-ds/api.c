@@ -440,6 +440,7 @@ static struct sr_dev_inst *probe_device(struct sr_scpi_dev_inst *scpi)
 	devc->data_source = DATA_SOURCE_LIVE;
 
 	sdi->priv = devc;
+	scpi->read_timeout_us = 5 * 1000 * 1000;  /* 增加超时时间为 5s，默认为 1s */
 
 	return sdi;
 }
